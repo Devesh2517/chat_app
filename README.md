@@ -23,17 +23,6 @@ pip install fastapi uvicorn "python-socketio[asyncio_server]" motor pydantic
 ## Environment
 
 - MONGO_URI (default: mongodb://localhost:27017)
-- RUN_MIGRATIONS (set to "1" to run migrations automatically on startup)
-- UVICORN_WORKERS etc as needed
-
-## Migrations
-
-- Migrations live under `app/migrations/versions/`.
-- Programmatic runner: `migrate.py` at project root.
-- To run manually:
-  - RUN_MIGRATIONS=1 uvicorn app.main:app --reload
-  - or: python migrate.py
-- The runner records applied migrations in the `migrations` collection.
 
 ## Run (development)
 
